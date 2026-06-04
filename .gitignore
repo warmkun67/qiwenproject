@@ -1,0 +1,32 @@
+# === 后端编译产物 ===
+qiproject/target/
+qiproject/release/
+
+# === 运行时用户上传文件 ===
+qiproject/qiwstorage/
+
+# === 前端 ===
+qiwebproject/node_modules/
+qiwebproject/dist/
+
+# === IDE ===
+.idea/
+.vscode/
+*.iml
+
+# === AI 助手 ===
+.claude/
+CLAUDE.md
+
+# === CI/CD 流水线 ===
+**/.workflow/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === 日志 ===
+*.log
+
+# === 敏感配置（包含真实密码，绝对不能提交） ===
+qiproject/src/main/resources/config/application.properties
