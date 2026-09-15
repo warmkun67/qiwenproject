@@ -28,5 +28,11 @@ Thumbs.db
 # === 日志 ===
 *.log
 
-# === 敏感配置（包含真实密码，绝对不能提交） ===
+# === 敏感配置 ===
 qiproject/src/main/resources/config/application.properties
+
+# === 文档 ===
+面试技术问答_奇文网盘.docx
+面试技术详解_奇文网盘.md
+面试自述稿_奇文网盘.md
+qi项目技术梳理文档.md

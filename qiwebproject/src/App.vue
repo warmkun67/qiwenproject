@@ -25,6 +25,9 @@ export default {
 		},
 		//  底部是否显示
 		isFooterShow() {
+			if (!this.$config.showExternalLink) {
+				return false
+			}
 			let routerNameList = [
 				'Onlyoffice',
 				'File',

@@ -7,11 +7,12 @@
 				v-for="(item, index) in functionList"
 				:key="index"
 			>
-				<a
+				<component
+					:is="$config.showExternalLink ? 'a' : 'div'"
 					class="function-link"
-					:href="item.link"
+					:href="$config.showExternalLink ? item.link : undefined"
+					:target="$config.showExternalLink ? '_blank' : undefined"
 					title="查看说明文档"
-					target="_blank"
 				>
 					<div class="img-wrapper">
 						<img class="img" :src="item.icon" />
@@ -20,7 +21,7 @@
 						<h3 class="title">{{ item.title }}</h3>
 						<p class="desc">{{ item.desc }}</p>
 					</div>
-				</a>
+				</component>
 			</li>
 		</ul>
 	</div>

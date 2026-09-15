@@ -34,7 +34,13 @@ const config = {
 	/**
 	 * 存放 token 时的命名方式
 	 */
-	tokenKeyName: 'token'
+	tokenKeyName: 'token',
+	/**
+	 * 是否展示奇文官网/社区的宣传性内容
+	 * （顶部“文档”“企业网盘”、首页 Banner 链接、功能介绍卡片跳转、页面底部版权栏）
+	 * 置为 false 隐藏这些内容但保留代码，需要恢复时改回 true
+	 */
+	showExternalLink: false
 }
 
 export default config

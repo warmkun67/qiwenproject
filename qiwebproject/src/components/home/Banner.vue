@@ -21,18 +21,20 @@
 						{{ item.btn }}
 					</el-button>
 					<div class="version-wrapper">
-						<a
-							class="version-item"
-							v-for="(linkItem, linkIndex) in item.linkList"
-							:key="`link-${index}-${linkIndex}`"
-							:href="linkItem.link"
-							:title="linkItem.link"
-							target="_blank"
-						>
-							<span class="link-name"
-								>{{ linkItem.name }} <i class="el-icon-d-arrow-right"></i
-							></span>
-						</a>
+						<template v-for="(linkItem, linkIndex) in item.linkList">
+							<a
+								v-if="$config.showExternalLink"
+								class="version-item"
+								:key="`link-${index}-${linkIndex}`"
+								:href="linkItem.link"
+								:title="linkItem.link"
+								target="_blank"
+							>
+								<span class="link-name"
+									>{{ linkItem.name }} <i class="el-icon-d-arrow-right"></i
+								></span>
+							</a>
+						</template>
 					</div>
 				</div>
 				<div class="carousel-img">
